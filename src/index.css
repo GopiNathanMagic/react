@@ -146,6 +146,7 @@ section.card-outer {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 32px;
+    overflow: hidden;
 }
 section.card {
     flex-basis: 31%;
@@ -252,6 +253,7 @@ section.testi-outer {
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+    overflow: hidden;
 }
 .blog-bottom h3 {
     font-size: 26px;
@@ -321,6 +323,7 @@ footer.footer-outer {
     padding: 0 0 40px 0;
     border-bottom: 1px solid #ffffff26;
     position: relative;
+    overflow: hidden;
 }
 .footer-bottom {
     padding: 40px 0 0 0;
@@ -372,7 +375,7 @@ footer.footer-outer {
     align-items: center;
     gap: 30px;
 }
-.footer-top::after {
+/* .footer-top::after {
     content: "";
     background-image: url(src/assets/eclipse-1.svg);
     position: absolute;
@@ -391,6 +394,16 @@ footer.footer-outer {
     top: 30px;
     right: 0;
     z-index: 1;
+} */
+.footer-top img.animation.left {
+    position: absolute;
+    top: 30px;
+    left: -100px;
+}
+.footer-top img.animation.right {
+    position: absolute;
+    top: 30px;
+    right: -100px;
 }
 .footer-button a:hover {
     background-color: transparent;

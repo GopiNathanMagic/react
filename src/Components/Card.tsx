@@ -5,22 +5,21 @@ import featurethree from "../assets/feature-3.svg"
 import featurefour from "../assets/feature-4.svg"
 import featurefive from "../assets/feature-5.svg"
 import featuresix from "../assets/feature-6.svg"
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 
 
 const Card = () => {
 
-    // const cardProfile = {
-    //     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-    //     hidden: { opacity: 0, y: 20 },
-    //   };
-    
+    const cardContent = {
+        visible: { x: 0, opacity: 1, transition: { duration: .5 } },
+        hidden: { x: 100, opacity: 0 },
+      };
 
   return (
     <>
     {/* card */}
-    <section className="card-outer">
+    <section  className="card-outer">
         <div className="container">
             <div className="card-content">
                 <p className="para">360° CUSTOMIZABLE</p>
@@ -28,7 +27,11 @@ const Card = () => {
                 <p className="para-two">Take total control of your eCommerce business by owning the source code and data that drive it.</p>
             </div>
                 <div className="card-inner">
-                    <section className="card one">
+                    <motion.section
+    initial="hidden"
+    whileInView="visible"
+    variants={cardContent}
+    className="card one">
                         <div className="card-top">
                             <div className="card-top-content">
                                 <h4>One time payment</h4>
@@ -38,8 +41,12 @@ const Card = () => {
                                 <p>Check out our best practices and support to quickly make text messaging one of your top 3 revenue channels.</p>
                             </div>
                         </div>
-                    </section>
-                    <section className="card two">
+                    </motion.section>
+                    <motion.section
+    initial="hidden"
+    whileInView="visible"
+    variants={cardContent}
+    className="card two">
                         <div className="card-top">
                             <div className="card-top-content">
                                 <h4>Self-reported data</h4>
@@ -49,8 +56,12 @@ const Card = () => {
                                 <p>You own your data, store design and business plan, but you are free to use the software platform and resources provided by Shopify.</p>
                             </div>
                         </div>
-                    </section>
-                    <section className="card three">
+                    </motion.section>
+                    <motion.section
+    initial="hidden"
+    whileInView="visible"
+    variants={cardContent}
+    className="card three">
                         <div className="card-top">
                             <div className="card-top-content">
                                 <h4>Updates are always free</h4>
@@ -60,8 +71,12 @@ const Card = () => {
                                 <p>Shopify is so dedicated to keeping its software current that it sends you free updates for a lifetime without charging you anything.</p>
                             </div>
                         </div>
-                    </section>
-                    <section className="card four">
+                    </motion.section>
+                    <motion.section
+    initial="hidden"
+    whileInView="visible"
+    variants={cardContent}
+    className="card four">
                         <div className="card-top">
                             <div className="card-top-content">
                                 <h4>Mobile first design</h4>
@@ -71,8 +86,12 @@ const Card = () => {
                                 <p>With our mobile app, you can allow your customers to check their order status, browse your store and create an account on the spot.</p>
                             </div>
                         </div>
-                    </section>
-                    <section className="card five">
+                    </motion.section>
+                    <motion.section
+    initial="hidden"
+    whileInView="visible"
+    variants={cardContent}
+    className="card five">
                         <div className="card-top">
                             <div className="card-top-content">
                                 <h4>100% Customizable</h4>
@@ -82,8 +101,12 @@ const Card = () => {
                                 <p>You can customize your storefront and everything else in the way you want as the owner of your source code.</p>
                             </div>
                         </div>
-                    </section>
-                    <section className="card six">
+                    </motion.section>
+                    <motion.section
+    initial="hidden"
+    whileInView="visible"
+    variants={cardContent}
+    className="card six">
                         <div className="card-top">
                             <div className="card-top-content">
                                 <h4>Easy task management</h4>
@@ -93,7 +116,7 @@ const Card = () => {
                                 <p>You can have peace of mind knowing that your system is running smoothly thanks to our techs' expertise and precision.</p>
                             </div>
                         </div>
-                    </section>
+                    </motion.section>
                 </div>
         </div>
     </section>

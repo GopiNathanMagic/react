@@ -1,8 +1,19 @@
 // import React from 'react'
 import slider from "../assets/hero.png"
+import { motion } from "framer-motion";
 
 
 const Banner = () => {
+
+  const bannerImage = {
+    visible: { y:  0, opacity: 1, transition: { duration: .5 } },
+    hidden: { y: 200, opacity: 1 },
+  };
+
+
+
+
+
   return (
     <>
     {/* slider */}
@@ -19,9 +30,13 @@ const Banner = () => {
                 <a href="" className="btn shop">shop demo</a>
             </div>
         </div>
-        <div className="banner-image">
+        <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={bannerImage}
+         className="banner-image">
           <img src={slider} alt="banner" />
-        </div>
+        </motion.div>
       </div>
       </div>
     </section>

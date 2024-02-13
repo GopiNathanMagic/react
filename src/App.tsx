@@ -16,7 +16,6 @@ const App = () => {
     <Testimonial />
     <Blog />
     <Footer />
-    {/* <Example /> */}
     </>
   )
 }

@@ -3,9 +3,23 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
+import { motion } from "framer-motion";
+import footeranimation from "../assets/eclipse-1.svg"
+import footer_animation_two from "../assets/eclipse-2.svg"
 
 
 const Footer = () => {
+
+  const footerContent = {
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    hidden: { opacity: 0, y: 100 },
+  };
+
+  const footerImage = {
+    visible: { y: 0, transition: { duration: 1 } },
+    hidden: { y: -100 },
+  };
+
     return (
         <>
         <footer className="footer-outer">
@@ -20,9 +34,28 @@ const Footer = () => {
         <a href="#">CONTACT US</a>
       </div>
     </div>
+    <motion.img
+      initial="hidden"
+      whileInView="visible"
+       animate={{rotate: 360 }}
+       transition= {{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
+     
+      variants={footerImage}
+    className="animation left" src={footeranimation} alt="eclipse" />
+    <motion.img
+      initial="hidden"
+      whileInView="visible"
+      animate={{rotate: 360 }}
+      transition= {{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
+      variants={footerImage} 
+    className="animation right" src={footer_animation_two} alt="eclipse" />
   </div>
   <div className="container">
-  <div className="footer-bottom">
+  <motion.div 
+  initial="hidden"
+  whileInView="visible"
+  variants={footerContent} 
+  className="footer-bottom">
     <div className="footer-logo">
       <img src={footerlogo} alt="footer-logo" />
     </div>
@@ -116,7 +149,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-  </div>
+  </motion.div>
   <div className="footer-bottom-copy">
     <div className="footer-para">
       <p>
