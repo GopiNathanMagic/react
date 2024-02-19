@@ -1,23 +1,21 @@
-import Banner from "./Components/Banner"
-import Blog from "./Components/Blog"
-import Card from "./Components/Card"
-import Footer from "./Components/Footer"
-import Header from "./Components/Header"
-import Testimonial from "./Components/Testimonial"
-// import Example from "./Components/Example"
-
+import Banner from "./Components/Banner";
+import Blog from "./Components/Blog";
+import Card from "./Components/Card";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+import Testimonial from "./Components/Testimonial";
 
 const App = () => {
   return (
     <>
-    <Header />
-    <Banner />
-    <Card />
-    <Testimonial />
-    <Blog />
-    <Footer />
+      <Header />
+      <Banner />
+      <Card />
+      <Testimonial />
+      <Blog />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
