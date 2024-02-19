@@ -128,9 +128,9 @@ section.card-outer {
   text-align: center;
   margin-bottom: 50px;
 }
-.card-top {
+/* .card-top {
   border: 1px solid rgb(66, 76, 74);
-}
+} */
 .card-top-content {
   background-color: rgb(255, 219, 149);
   display: flex;
@@ -154,6 +154,7 @@ section.card-outer {
 }
 section.card {
   flex-basis: 31%;
+  border: 1px solid rgb(66, 76, 74);
 }
 .card-top-content h4 {
   font-size: 18px;
