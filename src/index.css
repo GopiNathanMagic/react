@@ -427,7 +427,7 @@ footer.footer-outer {
 .hamburger-outer {
   display: none;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   position: absolute;
   top: 0;
   right: 0;
@@ -477,7 +477,7 @@ nav.hamburger {
 /* clicked */
 
 .burger-bar.clicked:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 13px);
+  transform: rotate(45deg) translate(2px, 13px);
   transition: ease-out 0.5s;
 }
 .burger-bar.clicked:nth-child(2) {
