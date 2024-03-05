@@ -1,8 +1,8 @@
 import footerlogo from "../assets/shopify-footer.png";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 import footeranimation from "../assets/eclipse-1.svg";
 import footer_animation_two from "../assets/eclipse-2.svg";
@@ -162,6 +162,19 @@ const Footer = () => {
             </div>
             <div className="socialmedia-outer">
               <div className="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/gopinathan96"
+                  target="_blank"
+                >
+                  <FaLinkedin color={"rgb(229, 231, 235)"} font-size={"20px"} />
+                </a>
+              </div>
+              <div className="social-icons">
+                <a href="https://github.com/GopiNathanMagic" target="_blank">
+                  <FaGithub color={"rgb(229, 231, 235)"} font-size={"20px"} />
+                </a>
+              </div>
+              <div className="social-icons">
                 <a href="#">
                   <FaInstagram
                     color={"rgb(229, 231, 235)"}
@@ -175,16 +188,6 @@ const Footer = () => {
                     color={"rgb(229, 231, 235)"}
                     font-size={"20px"}
                   />
-                </a>
-              </div>
-              <div className="social-icons">
-                <a href="#">
-                  <FaXTwitter color={"rgb(229, 231, 235)"} font-size={"20px"} />
-                </a>
-              </div>
-              <div className="social-icons">
-                <a href="#">
-                  <FaYoutube color={"rgb(229, 231, 235)"} font-size={"20px"} />
                 </a>
               </div>
             </div>
